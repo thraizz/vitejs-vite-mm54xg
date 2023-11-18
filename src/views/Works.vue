@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { useQuery } from '@tanstack/vue-query';
-const fetcher = async (): Promise<Post[]> =>
+const fetcher = async (): Promise<[]> =>
   await fetch('https://jsonplaceholder.typicode.com/posts').then((response) =>
     response.json()
   );
-const { isPending, isError, isFetching, data, error, refetch } = useQuery({
+const { isPending, isError, data, error } = useQuery({
   queryKey: ['posts'],
   queryFn: fetcher,
 });
