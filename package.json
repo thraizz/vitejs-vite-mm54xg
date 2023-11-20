@@ -9,13 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@tanstack/vue-query": "^5.8.4",
+    "axios": "^1.6.2",
     "msw": "^2.0.8",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.0",
+    "orval": "^6.20.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
     "vue-tsc": "^1.8.22"
